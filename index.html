@@ -53,13 +53,17 @@
         background-color: #b68c5a !important;
         font-family: "Poppins", serif !important;
       }
+      section{
+        max-width: 1152px;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body class="font-garamond">
-    <header>
+    <header class="mb-8">
       <nav>
         <!-- nav -->
-        <div class="navbar bg-base-100">
+        <div class="navbar max-w-6xl mx-auto bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -89,7 +93,7 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <img src="images/logo2.png" alt="">
+            <img src="images/logo2.png" alt="" />
           </div>
           <!-- menu -->
           <div class="navbar-center hidden lg:flex">
@@ -121,22 +125,27 @@
     <main>
       <!-- hero section -->
       <section>
-        <div
-          class="hero min-h-screen"
-          style="
-            background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);
-          "
-        >
+        <div class="hero rounded-xl overflow-hidden" style="background-image: url(images/banner.png)">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-neutral-content text-center">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <!-- content container -->
+            <div class="py-28 max-w-md lg:max-w-[680px] space-y-8">
+              <h1 class="mb-5 text-5xl lg:text-[72px] font-bold">
+                We Provide Effective Legal Solutions
+              </h1>
               <p class="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
               </p>
-              <button class="btn btn-primary">Get Started</button>
+              <div class="space-x-4 w-full flex">
+                <input
+                  type="text"
+                  placeholder="Search your services"
+                  class="input input-bordered flex-grow font-poppins"
+                />
+                <button class="btn btn-primary border-0">Search</button>
+              </div>
             </div>
           </div>
         </div>
